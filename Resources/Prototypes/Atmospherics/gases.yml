@@ -107,8 +107,6 @@
   specificHeat: 10
   heatCapacityRatio: 1.6
   molarMass: 1
-  gasOverlaySprite: /Textures/Effects/atmospherics.rsi
-  gasOverlayState: Hydrogen
   color: FFB6C1
   reagent: hydrogen
   pricePerMole: 1
