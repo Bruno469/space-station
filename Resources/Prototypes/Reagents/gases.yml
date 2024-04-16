@@ -344,7 +344,6 @@
 - type: reagent
   id: hydrogen
   name: reagent-name-hydrogen
-  group: Elements
   desc: reagent-desc-hydrogen
   physicalDesc: reagent-physical-desc-gaseous
   flavor: bitter
