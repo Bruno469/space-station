@@ -21,3 +21,14 @@
   products:
     Nitrogen: 2
     Oxygen: 1
+
+- type: reaction
+  id: Gash2oBreakdown
+  source: true
+  requiredMixerCategories:
+  - GasElectrolysis
+  reactants:
+    Water
+  products:
+    Hydrogen: 2
+    Oxygen: 1

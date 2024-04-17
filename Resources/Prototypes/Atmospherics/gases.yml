@@ -108,5 +108,5 @@
   heatCapacityRatio: 1.6
   molarMass: 1
   color: FFB6C1
-  reagent: hydrogen
+  reagent: Hydrogen
   pricePerMole: 1
