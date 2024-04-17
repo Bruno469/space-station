@@ -11,12 +11,6 @@ namespace Content.Server.Atmos.Piping.Unary.Components;
 public sealed partial class GasElectrolysisComponent : Component
 {
     /// <summary>
-    /// The ID for the pipe node.
-    /// </summary>
-    [DataField]
-    public string Inlet = "pipe";
-
-    /// <summary>
     /// For a condenser, how many U of reagents are given per each mole of gas.
     /// </summary>
     /// <remarks>

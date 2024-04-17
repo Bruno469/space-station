@@ -31,9 +31,7 @@ public sealed class GasElectrolysisSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly TransformSystem _transformSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-
-    private GasReactionPrototype[] _gasReactions = Array.Empty<GasReactionPrototype>();
-
+    
     public override void Initialize()
     {
         base.Initialize();
@@ -59,7 +57,8 @@ public sealed class GasElectrolysisSystem : EntitySystem
             var moleTemp = entity.Comp.MaxTempMultiplier;
             double EficiencTemp = environment.Temperature <= moleTemp ? environment.Temperature / moleTemp : 1.0;
             double molsToConvert = environment.TotalMoles;
-            var test = _gasReactions.TryGetValue<ReagentId>
+
+            environment.AdjustMoles(gasId:9, (float) molsToConvert);
         }
     }
 }
