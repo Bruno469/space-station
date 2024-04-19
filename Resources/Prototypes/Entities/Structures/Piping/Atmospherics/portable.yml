@@ -205,7 +205,8 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    sprite: 
+    sprite: Structures/Piping/Atmospherics/Portable/portable_sheater.rsi
+    state: Atmos
   - type: AtmosDevice
   - type: GasElectrolysis
   - type: Destructible

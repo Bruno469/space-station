@@ -39,30 +39,30 @@ public sealed class GasElectrolysisSystem : EntitySystem
     }
     private void OnElectrolysisUpdated(Entity<GasElectrolysisComponent> entity, ref AtmosDeviceUpdateEvent args)
     {
-        if (args.Grid is not {} grid)
+        if (args.Grid is not { } grid)
             return;
 
         var position = _transformSystem.GetGridTilePositionOrDefault(entity);
         var environment = _atmosphereSystem.GetTileMixture(grid, args.Map, position, true);
-        var reactions = 
 
         if (environment == null)
             return;
 
+        var moleTemp = entity.Comp.MaxTempMultiplier;
+        double EficiencTemp = environment.Temperature <= moleTemp ? environment.Temperature / moleTemp : 1.0;
+        double molsToConvert = environment.TotalMoles;
+        var removed = environment.Remove((float) molsToConvert);
+
         for (var i = 0; i < Atmospherics.TotalNumberOfGases; i++)
         {
-            if (_atmosphereSystem.GetGas(i) is not { } tilegas)
+            var moles = removed[i];
+            if (moles <= 0)
                 continue;
 
-            var moleTemp = entity.Comp.MaxTempMultiplier;
-            double EficiencTemp = environment.Temperature <= moleTemp ? environment.Temperature / moleTemp : 1.0;
-            double molsToConvert = environment.TotalMoles;
+            if (_atmosphereSystem.GetGas(i).Reagent is not { } gasReagent)
+                continue;
 
-            
-
-            if (_atmosphereSystem.GasReactions(tilegas) is not {} testee)
-            teste = environment.ReactionResults
-            environment.AdjustMoles(gasId:9, (float) molsToConvert);
+            environment.AdjustMoles(i, (float) molsToConvert);
         }
     }
 }
