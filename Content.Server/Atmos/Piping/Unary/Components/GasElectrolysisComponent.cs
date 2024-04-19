@@ -20,6 +20,10 @@ public sealed partial class GasElectrolysisComponent : Component
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public float MaxTempMultiplier = 0.2137f;
 
+    [DataField]
+    public Entity<SolutionComponent>? Solution = null;Da
+
+
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public float MaxEnergy = 500;
 }

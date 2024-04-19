@@ -31,7 +31,6 @@ public sealed class GasElectrolysisSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly TransformSystem _transformSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    
     public override void Initialize()
     {
         base.Initialize();
@@ -45,19 +44,24 @@ public sealed class GasElectrolysisSystem : EntitySystem
 
         var position = _transformSystem.GetGridTilePositionOrDefault(entity);
         var environment = _atmosphereSystem.GetTileMixture(grid, args.Map, position, true);
+        var reactions = 
 
         if (environment == null)
             return;
 
         for (var i = 0; i < Atmospherics.TotalNumberOfGases; i++)
         {
-            if (_atmosphereSystem.GetGas(i) is not { } Tilegas)
+            if (_atmosphereSystem.GetGas(i) is not { } tilegas)
                 continue;
 
             var moleTemp = entity.Comp.MaxTempMultiplier;
             double EficiencTemp = environment.Temperature <= moleTemp ? environment.Temperature / moleTemp : 1.0;
             double molsToConvert = environment.TotalMoles;
 
+            
+
+            if (_atmosphereSystem.GasReactions(tilegas) is not {} testee)
+            teste = environment.ReactionResults
             environment.AdjustMoles(gasId:9, (float) molsToConvert);
         }
     }
