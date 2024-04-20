@@ -149,3 +149,21 @@
   components:
     - type: GasMiner
       spawnGas: NitrousOxide
+
+- type: entity
+  name: Hydrogen miner
+  parent: GasMinerHydrogen
+  id: GasMinerHydrogenStation
+  suffix: Station, 1000kPa
+  components:
+    - type: GasMiner
+      spawnGas: Hydrogen
+
+- type: entity
+  name: Hydrogen gas miner
+  parent: GasMinerHydrogen
+  id: GasMinerHydrogenStationLarge
+  suffix: Large Station, 4500kPa
+  components:
+    - type: GasMiner
+      spawnGas: Hydrogen

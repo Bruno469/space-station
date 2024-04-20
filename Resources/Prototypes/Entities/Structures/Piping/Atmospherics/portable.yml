@@ -199,13 +199,13 @@
 
 - type: entity
   id: GasElectroly
-  name: electroly
+  name: Gas Electroly
   description: Electroly gases intro anothers gases.
   placement:
     mode: SnapgridCenter
   components:
   - type: Sprite
-    sprite: Structures/Piping/Atmospherics/Portable/portable_sheater.rsi
+    sprite: Resources/Textures/Structures/Piping/Atmospherics/condenser.rsi
     state: Atmos
   - type: AtmosDevice
   - type: GasElectrolysis

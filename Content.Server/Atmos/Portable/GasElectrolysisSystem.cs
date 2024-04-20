@@ -11,6 +11,7 @@ using Content.Shared.Atmos;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Chemistry.Reaction;
 using Content.Shared.Chemistry.Reagent;
+using Content.Shared.Coordinates;
 using Content.Shared.FixedPoint;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
@@ -42,7 +43,7 @@ public sealed class GasElectrolysisSystem : EntitySystem
         if (args.Grid is not { } grid)
             return;
 
-        var position = _transformSystem.GetGridTilePositionOrDefault(entity);
+        var position = _transformSystem.GetGridTilePositionOrDefault(entity.Owner);
         var environment = _atmosphereSystem.GetTileMixture(grid, args.Map, position, true);
 
         if (environment == null)

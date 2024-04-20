@@ -342,12 +342,13 @@
           min: 1
 
 - type: reagent
-  id: hydrogen
+  id: Hydrogen
   name: reagent-name-hydrogen
+  group: Elements
   desc: reagent-desc-hydrogen
   physicalDesc: reagent-physical-desc-gaseous
   flavor: bitter
-  color: "#FFB6C1"
+  color: "#808080"
   boilingPoint: -253.0
   meltingPoint: -259.2
   tileReactions:
@@ -360,12 +361,6 @@
       - !type:FlammableReaction
         multiplier: 1
   metabolisms:
-    Poison:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            asphyxia: 3
     Gas:
       effects:
       - !type:HealthChange
