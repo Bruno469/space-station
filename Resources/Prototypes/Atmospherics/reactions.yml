@@ -91,9 +91,9 @@
   effects:
   - !type:N2ODecompositionReaction {}
 
-  - type: gasReaction
+- type: gasReaction
   id: HydrogenFire
-  priority: 0
+  priority: -1
   minimumTemperature: 373.149
   minimumRequirements:
   - 0.01  # oxygen
