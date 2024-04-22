@@ -152,7 +152,7 @@
 
 - type: entity
   name: Hydrogen miner
-  parent: GasMinerHydrogen
+  parent: GasMinerBase
   id: GasMinerHydrogenStation
   suffix: Station, 1000kPa
   components:
@@ -161,7 +161,7 @@
 
 - type: entity
   name: Hydrogen gas miner
-  parent: GasMinerHydrogen
+  parent: GasMinerBase
   id: GasMinerHydrogenStationLarge
   suffix: Large Station, 4500kPa
   components:
