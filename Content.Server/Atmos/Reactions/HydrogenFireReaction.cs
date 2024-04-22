@@ -16,7 +16,7 @@ namespace Content.Server.Atmos.Reactions
             var location = holder as TileAtmosphere;
             mixture.ReactionResults[GasReaction.Fire] = 0f;
             var burnedFuel = 0f;
-            var initialTrit = mixture.GetMoles(Gas.Tritium);
+            var initialTrit = mixture.GetMoles(Gas.Hydrogen);
 
             if (mixture.GetMoles(Gas.Oxygen) < initialTrit ||
                 Atmospherics.MinimumTritiumOxyburnEnergy > (temperature * oldHeatCapacity * heatScale))
@@ -25,13 +25,13 @@ namespace Content.Server.Atmos.Reactions
                 if (burnedFuel > initialTrit)
                     burnedFuel = initialTrit;
 
-                mixture.AdjustMoles(Gas.Tritium, -burnedFuel);
+                mixture.AdjustMoles(Gas.Hydrogen, -burnedFuel);
             }
             else
             {
                 burnedFuel = initialTrit;
-                mixture.SetMoles(Gas.Tritium, mixture.GetMoles(Gas.Tritium) * (1 - 1 / Atmospherics.TritiumBurnTritFactor));
-                mixture.AdjustMoles(Gas.Oxygen, -mixture.GetMoles(Gas.Tritium));
+                mixture.SetMoles(Gas.Hydrogen, mixture.GetMoles(Gas.Hydrogen) * (1 - 1 / Atmospherics.TritiumBurnTritFactor));
+                mixture.AdjustMoles(Gas.Oxygen, -mixture.GetMoles(Gas.Hydrogen));
                 energyReleased += (Atmospherics.FireHydrogenEnergyReleased * burnedFuel * (Atmospherics.TritiumBurnTritFactor - 1));
             }
 
