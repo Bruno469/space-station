@@ -1,6 +1,11 @@
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
 using JetBrains.Annotations;
+using Content.Server.Fluids.EntitySystems;
+using Content.Shared.Chemistry.Components;
+using Content.Shared.FixedPoint;
+using Content.Shared.Maps;
+
 
 namespace Content.Server.Atmos.Reactions
 {
@@ -38,11 +43,19 @@ namespace Content.Server.Atmos.Reactions
             if (burnedFuel > 0)
             {
                 energyReleased += (Atmospherics.FireHydrogenEnergyReleased * burnedFuel);
-
                 // TODO ATMOS Radiation pulse here!
+                var reagent = "Water";
+                // Conservation of mass is impo
+                if (holder is not TileAtmosphere tile)
+                    return ReactionResult.NoReaction;
 
-                // Conservation of mass is important.
-                mixture.AdjustMoles(Gas.WaterVapor, burnedFuel);
+                if (mixture.GetMoles(Gas.Hydrogen) < 2)
+                    return ReactionResult.NoReaction;
+
+                mixture.AdjustMoles(Gas.WaterVapor, 2);
+
+                var tileRef = atmosphereSystem.GetTileRef(tile);
+                atmosphereSystem.Puddle.TrySpillAt(tileRef, new Solution(reagent, FixedPoint2.New(2)), out _, sound: true);
 
                 mixture.ReactionResults[GasReaction.Fire] += burnedFuel;
             }
