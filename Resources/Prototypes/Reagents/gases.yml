@@ -26,6 +26,15 @@
         conditions:
         - !type:OrganType
           type: Plant
+      - !type:HealthChange
+        conditions:
+          - !type:OrganType
+            type: Plasman
+        damage:
+          types:
+            Poison: 10
+            Asphyxiation: 5
+            Burn: 500  
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -78,8 +87,26 @@
       - !type:AdjustReagent
         reagent: Inaprovaline
         amount: -2.0
+    Medicine:
+      effects:
+      - !type:HealthChange
+        conditions:
+          - !type:OrganType
+            type: Plasman
+        damage:
+          types:
+            Poison: -1
+            Brute: -1
+            Radiation: -1
+            Asphyxiation: -1
+            Burn: -1
+            Toxin: -1
     Gas:
       effects:
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Plasman
       - !type:HealthChange
         scaleByQuantity: true
         ignoreResistances: true
@@ -87,6 +114,16 @@
           types:
             Poison:
               1
+      - !type:HealthChange
+        conditions:
+            - !type:OrganType
+              type: Plasman
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Cellular:
+              -1
       # We need a metabolism effect on reagent removal
       - !type:AdjustAlert
         alertType: Toxins
