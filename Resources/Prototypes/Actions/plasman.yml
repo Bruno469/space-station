@@ -1,0 +1,13 @@
+- type: entity
+  id: PlasmanGibAction
+  name: Gib Yourself!
+  description: Liquefy in plasma!
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Mobs/Species/Slime/organs.rsi
+      state: brain-slime
+    event: !type:GibActionEvent {}
+    checkCanInteract: false
+    checkConsciousness: false

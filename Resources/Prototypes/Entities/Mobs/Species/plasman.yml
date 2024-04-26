@@ -1,0 +1,88 @@
+- type: entity
+  save: false
+  name: Urist McPlasm
+  parent: BaseMobSpeciesPlasm
+  id: BaseMobPlasm
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Plasman
+  - type: Hunger
+    baseDecayRate: 0.0042
+  - type: Thirst
+    baseDecayRate: 0.0083
+  - type: Icon
+    sprite: Mobs/Species/Diona/parts.rsi
+    state: full
+  - type: Body
+    prototype: Diona
+    requiredLegs: 2
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Diona
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#cd7314"
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+      - id: FoodMeatPlant
+        amount: 5
+  - type: Bloodstream
+    bloodReagent: Plasma
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+      Acidic: [Touch, Ingestion]
+    reactions:
+    - reagents: [ Plasma ]
+      methods: [ Ingestion ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        damage:
+          types:
+            Poison: -1
+            Brute: -1
+            Radiation: -1
+            Asphyxiation: -1
+            Burn: -1
+            Toxin: -1
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 300 #weighs more than humans because wood
+        restitution: 0.0
+        mask:
+          - MobMask
+        layer:
+          - MobLayer
+  - type: Inventory
+    templateId: plasman
+  - type: Speech
+    speechVerb: Plant
+  - type: Vocal
+    sounds:
+      Male: UnisexDiona
+      Female: UnisexDiona
+      Unsexed: UnisexDiona
+  - type: GibAction
+    actionPrototype: PlasmanGibAction
+    allowedStates:
+    - Dead
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobPlasmanDummy
+  noSpawn: true
+  components:
+  - type: Inventory
+    templateId: plasman
+  - type: HumanoidAppearance
+    species: Plasman
