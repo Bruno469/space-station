@@ -1,7 +1,9 @@
 - type: entity
   save: false
   name: Urist McPlasm
-  parent: BaseMobSpeciesPlasm
+  parent: 
+  - MobFlammable
+  - BaseMobSpecies
   id: BaseMobPlasm
   abstract: true
   components:
@@ -20,6 +22,10 @@
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Plasman
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.50 #per second, scales with pressure and other constants.
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:

@@ -5,29 +5,29 @@
   prototype: MobPlasmanPerson
   sprites: MobPlasmanSprites
   defaultSkinTone: "#281754"
-  markingLimits: MobHumanMarkingLimits
+  markingLimits: MobSlimeMarkingLimits
   maleFirstNames: skeletonNamesFirst
   dollPrototype: MobSkeletonPersonDummy
   skinColoration: TintedHues
 
 - type: markingPoints
-id: MobSlimeMarkingLimits
-points:
-  Hair:
-    points: 1
-    required: false
-  FacialHair:
-    points: 1
-    required: false
-  Chest:
-    points: 1
-    required: false
-  Legs:
-    points: 4
-    required: false
-  Arms:
-    points: 4
-    required: false
+  id: MobSlimeMarkingLimits
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Chest:
+      points: 1
+      required: false
+    Legs:
+      points: 4
+      required: false
+    Arms:
+      points: 4
+      required: false
 
 - type: speciesBaseSprites
   id: MobPlasmanSprites

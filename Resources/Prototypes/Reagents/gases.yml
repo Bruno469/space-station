@@ -28,12 +28,12 @@
           type: Plant
       - !type:Ignite
         conditions:
-          - !type:OrganType
-            type: Plasman
+        - !type:OrganType
+          type: Plasman
       - !type:HealthChange
         conditions:
-          - !type:OrganType
-            type: Plasman
+        - !type:OrganType
+          type: Plasman
         damage:
           types:
             Poison: 10
@@ -106,8 +106,8 @@
               1
       - !type:HealthChange
         conditions:
-            - !type:OrganType
-              type: Plasman
+        - !type:OrganType
+          type: Plasman
         scaleByQuantity: true
         ignoreResistances: true
         damage:
