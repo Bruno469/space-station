@@ -7,7 +7,6 @@
   defaultSkinTone: "#281754"
   markingLimits: MobHumanMarkingLimits
   maleFirstNames: skeletonNamesFirst
-  femaleFirstNames: skeletonNamesFirst
   dollPrototype: MobSkeletonPersonDummy
   skinColoration: TintedHues
 
@@ -31,99 +30,75 @@ points:
     required: false
 
 - type: speciesBaseSprites
-  id: MobSkeletonSprites
+  id: MobPlasmanSprites
   sprites:
-    Head: MobSkeletonHead
-    Chest: MobSkeletonTorso
-    LArm: MobSkeletonLArm
-    RArm: MobSkeletonRArm
-    LHand: MobSkeletonLHand
-    RHand: MobSkeletonRHand
-    LLeg: MobSkeletonLLeg
-    RLeg: MobSkeletonRLeg
-    LFoot: MobSkeletonLFoot
-    RFoot: MobSkeletonRFoot
+    Head: MobPlasmanHead
+    Chest: MobPlasmanTorso
+    LArm: MobPlasmanLArm
+    RArm: MobPlasmanRArm
+    LHand: MobPlasmanLHand
+    RHand: MobPlasmanRHand
+    LLeg: MobPlasmanLLeg
+    RLeg: MobPlasmanRLeg
+    LFoot: MobPlasmanLFoot
+    RFoot: MobPlasmanRFoot
 
 - type: humanoidBaseSprite
-  id: MobSkeletonHead
+  id: MobPlasmanHead
   baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
-    state: head_m
+    sprite: Mobs/Species/Plasman.rsi
+    state: head
 
 - type: humanoidBaseSprite
-  id: MobSkeletonHeadMale
+  id: MobPlasmanTorso
   baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
-    state: head_m
+    sprite: Mobs/Species/Plasman.rsi
+    state: torso
 
 - type: humanoidBaseSprite
-  id: MobSkeletonHeadFemale
+  id: MobPlasmanLLeg
   baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
-    state: head_f
-
-- type: humanoidBaseSprite
-  id: MobSkeletonTorso
-  baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
-    state: torso_m
-
-- type: humanoidBaseSprite
-  id: MobSkeletonTorsoMale
-  baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
-    state: torso_m
-
-- type: humanoidBaseSprite
-  id: MobSkeletonTorsoFemale
-  baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
-    state: torso_f
-
-- type: humanoidBaseSprite
-  id: MobSkeletonLLeg
-  baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
+    sprite: Mobs/Species/Plasman.rsi
     state: l_leg
 
 - type: humanoidBaseSprite
-  id: MobSkeletonLArm
+  id: MobPlasmanLArm
   baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
+    sprite: Mobs/Species/Plasman.rsi
     state: l_arm
 
 - type: humanoidBaseSprite
-  id: MobSkeletonLHand
+  id: MobPlasmanLHand
   baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
+    sprite: Mobs/Species/Plasman.rsi
     state: l_hand
 
 - type: humanoidBaseSprite
-  id: MobSkeletonLFoot
+  id: MobPlasmanLFoot
   baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
+    sprite: Mobs/Species/Plasman.rsi
     state: l_foot
 
 - type: humanoidBaseSprite
-  id: MobSkeletonRLeg
+  id: MobPlasmanRLeg
   baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
+    sprite: Mobs/Species/Plasman.rsi
     state: r_leg
 
 - type: humanoidBaseSprite
-  id: MobSkeletonRArm
+  id: MobPlasmanRArm
   baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
+    sprite: Mobs/Species/Plasman.rsi
     state: r_arm
 
 - type: humanoidBaseSprite
-  id: MobSkeletonRHand
+  id: MobPlasmanRHand
   baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
+    sprite: Mobs/Species/Plasman.rsi
     state: r_hand
 
 - type: humanoidBaseSprite
-  id: MobSkeletonRFoot
+  id: MobPlasmanRFoot
   baseSprite:
-    sprite: Mobs/Species/Skeleton/parts.rsi
+    sprite: Mobs/Species/Plasman.rsi
     state: r_foot

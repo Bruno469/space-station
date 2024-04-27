@@ -12,14 +12,14 @@
   - type: Thirst
     baseDecayRate: 0.0083
   - type: Icon
-    sprite: Mobs/Species/Diona/parts.rsi
+    sprite: Mobs/Species/Plasman.rsi
     state: full
   - type: Body
-    prototype: Diona
+    prototype: Plasman
     requiredLegs: 2
   - type: Damageable
     damageContainer: Biological
-    damageModifierSet: Diona
+    damageModifierSet: Plasman
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
@@ -36,10 +36,9 @@
     groups:
       Flammable: [ Touch ]
       Extinguish: [ Touch ]
-      Acidic: [Touch, Ingestion]
     reactions:
     - reagents: [ Plasma ]
-      methods: [ Ingestion ]
+      methods: [ Ingestion, Touch ]
       effects:
       - !type:HealthChange
         scaleByQuantity: true
