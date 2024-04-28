@@ -28,9 +28,5 @@
       part: LeftHandPlasman
     right leg:
       part: RightLegPlasman
-      connections:
-      - right foot
     left leg:
       part: LeftLegPlasman
-      connections:
-      - left foot
