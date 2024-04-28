@@ -3,4 +3,5 @@
   - plasmeme_scream_2.ogg
   - plasmeme_scream_3.ogg
   license: "CC-BY-4.0"
-  copyright: "Taked from tg station in https://github.com/tgstation/tgstation/tree/master/sound/voice/plasmaman"
+  copyright: "Taked from tg station"
+  source: "https://github.com/tgstation/tgstation/tree/master/sound/voice/plasmaman"
