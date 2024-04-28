@@ -1,5 +1,4 @@
 - type: entity
-  save: false
   name: Urist McPlasm
   parent: BaseMobSpeciesOrganic
   id: MobPlasmaPerson
@@ -28,7 +27,7 @@
   - type: Butcherable
     butcheringType: Spike
     spawned:
-      - id: FoodMeatPlant
+      - id: RawPlasma
         amount: 5
   - type: Bloodstream
     bloodReagent: Plasma
@@ -62,8 +61,6 @@
           - MobMask
         layer:
           - MobLayer
-  - type: Inventory
-    templateId: Plasman
   - type: Respirator
     damage:
       types:
@@ -73,20 +70,18 @@
         Asphyxiation: -1.0
     maxSaturation: 15
   - type: Speech
-    speechVerb: Plant
+    speechVerb: Slime
+    speechSounds: Slime
   - type: Vocal
     sounds:
-      Male: UnisexDiona
-      Female: UnisexDiona
-      Unsexed: UnisexDiona
-  - type: GibAction
-    actionPrototype: PlasmanGibAction
-    allowedStates:
-    - Dead
+      Male: UnisexPlasm
+      Female: UnisexPlasm
+      Unsexed: UnisexPlasm
 
 - type: entity
   parent: MobHumanDummy
   id: MobPlasmanDummy
+  noSpawn: true
   components:
   - type: HumanoidAppearance
     species: PlasmaPerson

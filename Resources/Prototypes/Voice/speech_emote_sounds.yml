@@ -209,6 +209,20 @@
     variation: 0.125
 
 - type: emoteSounds
+  id: UnisexPlasm
+  sounds:
+    Scream:
+      collection: PlasmScreams
+    Laugh:
+      collection: DionaLaugh
+    Honk:
+      collection: BikeHorn
+    Weh:
+      collection: Weh
+  params:
+    variation: 0.125
+
+- type: emoteSounds
   id: UnisexArachnid
   params:
     variation: 0.125

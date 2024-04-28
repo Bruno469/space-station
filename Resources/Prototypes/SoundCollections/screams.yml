@@ -30,3 +30,10 @@
     - /Audio/Voice/Cluwne/cluwnelaugh1.ogg
     - /Audio/Voice/Cluwne/cluwnelaugh2.ogg
     - /Audio/Voice/Cluwne/cluwnelaugh3.ogg
+
+- type: soundCollection
+  id: PlasmScreams
+  files:
+    - /Audio/Voice/Plasman/plasmeme_scream_1.ogg
+    - /Audio/Voice/Plasman/plasmeme_scream_2.ogg
+    - /Audio/Voice/Plasman/plasmeme_scream_3.ogg
