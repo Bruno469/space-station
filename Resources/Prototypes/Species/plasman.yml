@@ -21,8 +21,6 @@
     RHand: MobPlasmanRHand
     LLeg: MobPlasmanLLeg
     RLeg: MobPlasmanRLeg
-    LFoot: MobPlasmanLFoot
-    RFoot: MobPlasmanRFoot
 
 - type: humanoidBaseSprite
   id: MobPlasmanHead
@@ -55,12 +53,6 @@
     state: l_hand
 
 - type: humanoidBaseSprite
-  id: MobPlasmanLFoot
-  baseSprite:
-    sprite: Mobs/Species/Plasman.rsi
-    state: l_foot
-
-- type: humanoidBaseSprite
   id: MobPlasmanRLeg
   baseSprite:
     sprite: Mobs/Species/Plasman.rsi
@@ -77,9 +69,3 @@
   baseSprite:
     sprite: Mobs/Species/Plasman.rsi
     state: r_hand
-
-- type: humanoidBaseSprite
-  id: MobPlasmanRFoot
-  baseSprite:
-    sprite: Mobs/Species/Plasman.rsi
-    state: r_foot
