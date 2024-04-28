@@ -296,3 +296,34 @@
     Cellular: 0.0
     Heat: 2.5
     Caustic: 0.0
+
+- type: damageModifierSet
+  id: Plasman
+  coefficients:
+    Blunt: 1.5
+    Slash: 1.5
+    Piercing: 0.5
+    Heat: 1.5
+    Shock: 0.5
+    Cold: 0.0
+    Caustic: 0.0
+    Poison: 0.0
+    Cellular: 0.0
+  flatReductions:
+    # can't punch the endoskeleton to death
+    Blunt: 5
+
+- type: damageModifierSet
+  id: Plasman
+  coefficients:
+    Blunt: 1.5
+    Slash: 1.5
+    Piercing: 0.5
+    Heat: 1.5
+    Shock: 0.5
+    Cold: 0.0
+    Caustic: 0.0
+    Poison: 0.0
+    Cellular: 0.0
+    Radiation: 0.0
+    Poison: 0.0

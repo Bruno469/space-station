@@ -27,7 +27,7 @@
   - type: Butcherable
     butcheringType: Spike
     spawned:
-      - id: RawPlasma
+      - id: Plasma
         amount: 5
   - type: Bloodstream
     bloodReagent: Plasma
