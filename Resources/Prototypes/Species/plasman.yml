@@ -2,12 +2,12 @@
   id: Plasman
   name: species-name-plasman
   roundStart: true
-  prototype: MobPlasmanPerson
+  prototype: MobPlasm
   sprites: MobPlasmanSprites
   defaultSkinTone: "#281754"
   markingLimits: MobHumanMarkingLimits
   maleFirstNames: skeletonNamesFirst
-  dollPrototype: MobSkeletonPersonDummy
+  dollPrototype: MobPlasmanDummy
   skinColoration: TintedHues
 
 - type: speciesBaseSprites

@@ -97,6 +97,12 @@
         conditions:
         - !type:OrganType
           type: Plasman
+      - !type:ModifyLungGas
+        conditions:
+        - !type:OrganType
+          type: Plasman
+        ratios:
+          Plasma: -1.0
       - !type:HealthChange
         scaleByQuantity: true
         ignoreResistances: true

@@ -1,16 +1,13 @@
 - type: entity
-  save: false
   name: Urist McPlasm
-  parent: 
-  - MobFlammable
-  - BaseMobSpecies
-  id: BaseMobPlasm
+  parent: BaseMobSpeciesOrganic
+  id: MobPlasm
   abstract: true
   components:
   - type: HumanoidAppearance
     species: Plasman
   - type: Hunger
-    baseDecayRate: 0.0042
+    baseDecayRate: 0
   - type: Thirst
     baseDecayRate: 0.0083
   - type: Icon
@@ -22,10 +19,6 @@
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Plasman
-  - type: Barotrauma
-    damage:
-      types:
-        Blunt: 0.50 #per second, scales with pressure and other constants.
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
@@ -69,7 +62,15 @@
         layer:
           - MobLayer
   - type: Inventory
-    templateId: plasman
+    templateId: Plasman
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 0.1
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
+    maxSaturation: 15
   - type: Speech
     speechVerb: Plant
   - type: Vocal
@@ -88,6 +89,6 @@
   noSpawn: true
   components:
   - type: Inventory
-    templateId: plasman
+    templateId: Plasman
   - type: HumanoidAppearance
     species: Plasman
