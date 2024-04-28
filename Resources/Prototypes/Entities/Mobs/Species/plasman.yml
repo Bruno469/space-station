@@ -1,11 +1,12 @@
 - type: entity
+  save: false
   name: Urist McPlasm
   parent: BaseMobSpeciesOrganic
-  id: MobPlasm
+  id: MobPlasmaPerson
   abstract: true
   components:
   - type: HumanoidAppearance
-    species: Plasman
+    species: PlasmaPerson
   - type: Hunger
     baseDecayRate: 0
   - type: Thirst
@@ -84,11 +85,8 @@
     - Dead
 
 - type: entity
-  parent: BaseSpeciesDummy
+  parent: MobHumanDummy
   id: MobPlasmanDummy
-  noSpawn: true
   components:
-  - type: Inventory
-    templateId: Plasman
   - type: HumanoidAppearance
-    species: Plasman
+    species: PlasmaPerson

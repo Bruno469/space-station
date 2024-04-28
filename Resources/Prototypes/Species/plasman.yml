@@ -1,8 +1,8 @@
 - type: species
-  id: Plasman
+  id: PlasmaPerson
   name: species-name-plasman
   roundStart: true
-  prototype: MobPlasm
+  prototype: PlasmaPerson
   sprites: MobPlasmanSprites
   defaultSkinTone: "#281754"
   markingLimits: MobHumanMarkingLimits
