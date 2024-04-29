@@ -15,7 +15,7 @@
       - right leg
       - left leg
     right arm:
-      part: RightArmSlime
+      part: RightArmPlasman
       connections:
       - right hand
     left arm:
