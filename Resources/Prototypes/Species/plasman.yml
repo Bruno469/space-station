@@ -47,6 +47,18 @@
     state: torso
 
 - type: humanoidBaseSprite
+  id: MobPlasmanTorsoMale
+  baseSprite:
+    sprite: Mobs/Species/Plasman.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobPlasmanTorsoFemale
+  baseSprite:
+    sprite: Mobs/Species/Plasman.rsi
+    state: torso
+
+- type: humanoidBaseSprite
   id: MobPlasmanLLeg
   baseSprite:
     sprite: Mobs/Species/Plasman.rsi
