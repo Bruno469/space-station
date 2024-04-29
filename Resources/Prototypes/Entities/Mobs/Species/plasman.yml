@@ -28,7 +28,7 @@
     butcheringType: Spike
     spawned:
       - id: SheetPlasma1
-        amount: 5
+        amount: 3
   - type: Bloodstream
     bloodReagent: Plasma
   - type: Reactive
@@ -49,18 +49,6 @@
             Asphyxiation: -1
             Burn: -1
             Toxin: -1
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 300 #weighs more than humans because wood
-        restitution: 0.0
-        mask:
-          - MobMask
-        layer:
-          - MobLayer
   - type: Respirator
     damage:
       types:

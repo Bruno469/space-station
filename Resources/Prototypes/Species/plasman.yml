@@ -14,6 +14,8 @@
   id: MobPlasmanSprites
   sprites:
     Head: MobPlasmanHead
+    Hair: MobSlimeMarkingFollowSkin
+    FacialHair: MobSlimeMarkingFollowSkin
     Chest: MobPlasmanTorso
     LArm: MobPlasmanLArm
     RArm: MobPlasmanRArm
@@ -21,6 +23,30 @@
     RHand: MobPlasmanRHand
     LLeg: MobPlasmanLLeg
     RLeg: MobPlasmanRLeg
+
+- type: markingPoints
+  id: MobPlasmanMarkingLimits
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Chest:
+      points: 1
+      required: false
+    Legs:
+      points: 4
+      required: false
+    Arms:
+      points: 4
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobPlasmanMarkingFollowSkin
+  markingsMatchSkin: true
+  layerAlpha: 0.5
 
 - type: humanoidBaseSprite
   id: MobPlasmanHead

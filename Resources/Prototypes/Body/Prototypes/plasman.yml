@@ -4,7 +4,7 @@
   root: torso
   slots:
     head:
-      part: HeadSlime
+      part: HeadPlasman
       connections:
       - torso
     torso:
@@ -14,6 +14,9 @@
       - left arm
       - right leg
       - left leg
+      organs:
+        core: SentientPlasmanCore
+        lungs: OrganPlasmanLungs
     right arm:
       part: RightArmPlasman
       connections:

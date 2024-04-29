@@ -1,7 +1,7 @@
 - type: entity
-  id: SentientSlimeCore
+  id: SentientPlasmanCore
   parent: [BaseItem, OrganHumanBrain]
-  name: sentient slime core 
+  name: sentient Plasman core
   description: "The source of incredible, unending gooeyness."
   components:
     - type: Sprite
@@ -10,15 +10,12 @@
     - type: Stomach
     - type: Metabolizer
       maxReagents: 6
-      metabolizerTypes: [ Slime ]
+      metabolizerTypes: [ Plasman ]
       removeEmpty: true
       groups:
         - id: Food
         - id: Drink
-        - id: Medicine
-        - id: Poison
-        - id: Narcotic
-        - id: Alcohol
+        - id: Gas
           rateModifier: 0.25
     - type: SolutionContainerManager
       solutions:
@@ -27,18 +24,18 @@
         food:
           maxVol: 5
           reagents:
-          - ReagentId: GreyMatter
+          - ReagentId: Plasma
             Quantity: 5
         organ:
           reagents:
-          - ReagentId: Slime
+          - ReagentId: Plasma
             Quantity: 10
 
       
 - type: entity
-  id: OrganSlimeLungs
+  id: OrganPlasmanLungs
   parent: BaseHumanOrgan
-  name: slime gas sacs
+  name: plasman gas sacs
   description: "Collects nitrogen, which slime cells use for maintenance."
   components:
   - type: Sprite
@@ -47,12 +44,12 @@
       - state: lung-l-slime
       - state: lung-r-slime
   - type: Lung
-    alert: LowNitrogen
+    alert: LowPlasm
   - type: Metabolizer
     removeEmpty: true
     solutionOnBody: false
     solution: "Lung"
-    metabolizerTypes: [ Slime ]
+    metabolizerTypes: [ Plasman ]
     groups:
     - id: Gas
       rateModifier: 100.0
@@ -60,7 +57,7 @@
     solutions:
       organ:
         reagents:
-        - ReagentId: Slime
+        - ReagentId: Plasma
           Quantity: 10
       Lung:
         maxVol: 100.0
@@ -68,5 +65,5 @@
       food:
         maxVol: 5
         reagents:
-        - ReagentId: UncookedAnimalProteins
+        - ReagentId: Plasma
           Quantity: 5
