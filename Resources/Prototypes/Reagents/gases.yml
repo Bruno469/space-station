@@ -33,7 +33,7 @@
         damage:
           types:
             Burn: 50
-       - !type:Ignite
+      - !type:Ignite
         conditions:
         - !type:OrganType
           type: Plasman
