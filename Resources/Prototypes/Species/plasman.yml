@@ -29,6 +29,18 @@
     state: head
 
 - type: humanoidBaseSprite
+  id: MobPlasmanHeadMale
+  baseSprite:
+    sprite: Mobs/Species/Plasman.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobPlasmanFemale
+  baseSprite:
+    sprite: Mobs/Species/Plasman.rsi
+    state: head
+
+- type: humanoidBaseSprite
   id: MobPlasmanTorso
   baseSprite:
     sprite: Mobs/Species/Plasman.rsi
