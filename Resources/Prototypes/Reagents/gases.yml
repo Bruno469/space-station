@@ -164,6 +164,46 @@
               1
       - !type:HealthChange
         conditions:
+          - !type:OrganType
+            type: Dragon
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              1
+      - !type:HealthChange
+        conditions:
+          - !type:OrganType
+            type: Dwarf
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              1
+      - !type:HealthChange
+        conditions:
+          - !type:OrganType
+            type: Moth
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              1
+      - !type:HealthChange
+        conditions:
+          - !type:OrganType
+            type: Arachnid
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              1
+      - !type:HealthChange
+        conditions:
         - !type:OrganType
           type: Plasman
         scaleByQuantity: true
@@ -214,6 +254,51 @@
         conditions:
           - !type:OrganType
             type: Slime
+          - !type:ReagentThreshold
+            min: 1.5
+        clear: True
+        time: 5
+      - !type:AdjustAlert
+        alertType: Toxins
+        conditions:
+          - !type:OrganType
+            type: Arachnid
+          - !type:ReagentThreshold
+            min: 1.5
+        clear: True
+        time: 5
+      - !type:AdjustAlert
+        alertType: Toxins
+        conditions:
+          - !type:OrganType
+            type: Moth
+          - !type:ReagentThreshold
+            min: 1.5
+        clear: True
+        time: 5
+      - !type:AdjustAlert
+        alertType: Toxins
+        conditions:
+          - !type:OrganType
+            type: Dwarf
+          - !type:ReagentThreshold
+            min: 1.5
+        clear: True
+        time: 5
+      - !type:AdjustAlert
+        alertType: Toxins
+        conditions:
+          - !type:OrganType
+            type: Bloodsucker
+          - !type:ReagentThreshold
+            min: 1.5
+        clear: True
+        time: 5
+      - !type:AdjustAlert
+        alertType: Toxins
+        conditions:
+          - !type:OrganType
+            type: Dragon
           - !type:ReagentThreshold
             min: 1.5
         clear: True
