@@ -116,15 +116,43 @@
         conditions:
           - !type:OrganType
             type: Vox
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              1
+      - !type:HealthChange
         conditions:
           - !type:OrganType
             type: Plant
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              1
+      - !type:HealthChange
         conditions:
           - !type:OrganType
             type: Rat
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              1
+      - !type:HealthChange
         conditions:
           - !type:OrganType
             type: Human
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              1
+      - !type:HealthChange
         conditions:
           - !type:OrganType
             type: Slime
@@ -150,15 +178,39 @@
         conditions:
           - !type:OrganType
             type: Vox
+        - !type:ReagentThreshold
+          min: 1.5
+        clear: True
+        time: 5
+      - !type:AdjustAlert
+        alertType: Toxins
         conditions:
           - !type:OrganType
             type: Plant
+        - !type:ReagentThreshold
+          min: 1.5
+        clear: True
+        time: 5
+      - !type:AdjustAlert
+        alertType: Toxins
         conditions:
           - !type:OrganType
             type: Rat
+        - !type:ReagentThreshold
+          min: 1.5
+        clear: True
+        time: 5
+      - !type:AdjustAlert
+        alertType: Toxins
         conditions:
           - !type:OrganType
             type: Human
+        - !type:ReagentThreshold
+          min: 1.5
+        clear: True
+        time: 5
+      - !type:AdjustAlert
+        alertType: Toxins
         conditions:
           - !type:OrganType
             type: Slime
