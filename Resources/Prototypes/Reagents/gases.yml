@@ -30,9 +30,16 @@
         conditions:
         - !type:OrganType
           type: Plasman
+        scaleByQuantity: true
+        ignoreResistances: true
         damage:
           types:
-            Burn: 50
+            Burn: 100
+      - !type:FlammableReaction
+        conditions:
+        - !type:OrganType
+          type: Plasman
+        multiplier: 4
       - !type:Ignite
         conditions:
         - !type:OrganType
