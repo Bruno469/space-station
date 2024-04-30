@@ -113,6 +113,17 @@
         ratios:
           Plasma: -1.0
       - !type:HealthChange
+        conditions:
+          - !type:OrganType
+            type: Vox
+          - !type:OrganType
+            type: Plant
+          - !type:OrganType
+            type: Rat
+          - !type:OrganType
+            type: Human
+          - !type:OrganType
+            type: Slime
         scaleByQuantity: true
         ignoreResistances: true
         damage:
@@ -133,6 +144,16 @@
       - !type:AdjustAlert
         alertType: Toxins
         conditions:
+          - !type:OrganType
+            type: Vox
+          - !type:OrganType
+            type: Plant
+          - !type:OrganType
+            type: Rat
+          - !type:OrganType
+            type: Human
+          - !type:OrganType
+            type: Slime
           - !type:ReagentThreshold
             min: 1.5
         clear: True
