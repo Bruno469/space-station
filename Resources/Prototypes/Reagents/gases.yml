@@ -178,8 +178,8 @@
         conditions:
           - !type:OrganType
             type: Vox
-        - !type:ReagentThreshold
-          min: 1.5
+          - !type:ReagentThreshold
+            min: 1.5
         clear: True
         time: 5
       - !type:AdjustAlert
@@ -187,8 +187,8 @@
         conditions:
           - !type:OrganType
             type: Plant
-        - !type:ReagentThreshold
-          min: 1.5
+          - !type:ReagentThreshold
+            min: 1.5
         clear: True
         time: 5
       - !type:AdjustAlert
@@ -196,8 +196,8 @@
         conditions:
           - !type:OrganType
             type: Rat
-        - !type:ReagentThreshold
-          min: 1.5
+          - !type:ReagentThreshold
+            min: 1.5
         clear: True
         time: 5
       - !type:AdjustAlert
@@ -205,8 +205,8 @@
         conditions:
           - !type:OrganType
             type: Human
-        - !type:ReagentThreshold
-          min: 1.5
+          - !type:ReagentThreshold
+            min: 1.5
         clear: True
         time: 5
       - !type:AdjustAlert
@@ -214,8 +214,8 @@
         conditions:
           - !type:OrganType
             type: Slime
-        - !type:ReagentThreshold
-          min: 1.5
+          - !type:ReagentThreshold
+            min: 1.5
         clear: True
         time: 5
   reactiveEffects:
