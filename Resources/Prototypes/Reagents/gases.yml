@@ -116,12 +116,16 @@
         conditions:
           - !type:OrganType
             type: Vox
+        conditions:
           - !type:OrganType
             type: Plant
+        conditions:
           - !type:OrganType
             type: Rat
+        conditions:
           - !type:OrganType
             type: Human
+        conditions:
           - !type:OrganType
             type: Slime
         scaleByQuantity: true
@@ -146,16 +150,20 @@
         conditions:
           - !type:OrganType
             type: Vox
+        conditions:
           - !type:OrganType
             type: Plant
+        conditions:
           - !type:OrganType
             type: Rat
+        conditions:
           - !type:OrganType
             type: Human
+        conditions:
           - !type:OrganType
             type: Slime
-          - !type:ReagentThreshold
-            min: 1.5
+        - !type:ReagentThreshold
+          min: 1.5
         clear: True
         time: 5
   reactiveEffects:
