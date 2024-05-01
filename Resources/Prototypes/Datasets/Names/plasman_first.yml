@@ -1,6 +1,6 @@
-type: dataset
-id: first_plasmamen
-values:
+- type: dataset
+  id: first_plasmamen
+  values:
   - Argon
   - Boron
   - Cadmium
