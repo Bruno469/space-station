@@ -6,7 +6,8 @@
   sprites: MobPlasmanSprites
   defaultSkinTone: "#281754"
   markingLimits: MobHumanMarkingLimits
-  maleFirstNames: skeletonNamesFirst
+  maleFirstNames: first_plasmamen
+  lastNames: last_plasmamen
   dollPrototype: MobPlasmanDummy
   skinColoration: TintedHues
 
