@@ -36,7 +36,7 @@
   id: OrganPlasmanLungs
   parent: BaseHumanOrgan
   name: plasman gas sacs
-  description: "Collects nitrogen, which slime cells use for maintenance."
+  description: "Collects plasma, which plasma cells use for maintenance."
   components:
   - type: Sprite
     sprite: Mobs/Species/Slime/organs.rsi
@@ -44,7 +44,7 @@
       - state: lung-l-slime
       - state: lung-r-slime
   - type: Lung
-    alert: LowPlasm
+    alert: LowPlasma
   - type: Metabolizer
     removeEmpty: true
     solutionOnBody: false
