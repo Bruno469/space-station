@@ -5,11 +5,10 @@
   description: Basic plasmaman suit made for plasmaman
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/plasman/service.rsi
+    sprite: Clothing/Uniforms/plasman/others.rsi
     state: baseicont
   - type: Clothing
-    sprite: Clothing/Uniforms/plasman/service.rsi
-    state: basevesting
+    sprite: Clothing/Uniforms/plasman/others.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: Armor

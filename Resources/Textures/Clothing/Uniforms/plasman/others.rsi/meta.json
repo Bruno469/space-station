@@ -8,10 +8,10 @@
     },
     "states": [
       {
-        "name": "baseicont"
+        "name": "icon"
       },
       {
-        "name": "basevesting",
+        "name": "equipped-INNERCLOTHING",
         "directions": 4
       }
     ]
