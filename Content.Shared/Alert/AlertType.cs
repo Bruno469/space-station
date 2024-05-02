@@ -9,7 +9,7 @@ namespace Content.Shared.Alert
     {
         Error,
         LowOxygen,
-        LowPlasm,
+        LowPlasma,
         LowNitrogen,
         LowPressure,
         HighPressure,
