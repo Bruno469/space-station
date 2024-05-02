@@ -1,0 +1,25 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitplasmaman
+  name: basic plasmaman uniform
+  description: Basic plasmaman suit made for plasmaman
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/plasman/service.rsi
+    state: baseicont
+  - type: Clothing
+    sprite: Clothing/Uniforms/plasman/service.rsi
+    state: basevesting
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+        Caustic: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetPlasmanBasic
