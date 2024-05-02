@@ -1,10 +1,10 @@
 #CREW HARDSUITS
 #Standard Hardsuit
 - type: entity
-  parent: ClothingHeadHardsuitBase
+  parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetPlasmanBasic
   name: basic PlasmanBasic helmet
-  description: A basic-looking PlasmanBasic helmet that provides minor protection against most sources of damage.
+  description: A basic-looking PlasmanBasic helmet that provides minor protection against oxygen atmos.
   components:
   - type: BreathMask
   - type: Sprite
