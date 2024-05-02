@@ -1,5 +1,4 @@
-#CREW HARDSUITS
-#Standard Hardsuit
+#CREW SUITS
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetPlasmanBasic

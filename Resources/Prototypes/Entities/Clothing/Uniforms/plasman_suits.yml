@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingPlasmansuitBase
   id: ClothingJumpsuitPlasmaman
   name: basic plasmaman uniform
   description: Basic plasmaman suit made for plasmaman
