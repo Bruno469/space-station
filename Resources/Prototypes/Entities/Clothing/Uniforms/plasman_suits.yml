@@ -6,7 +6,7 @@
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/plasman/others.rsi
-    state: baseicont
+    state: icon
   - type: Clothing
     sprite: Clothing/Uniforms/plasman/others.rsi
   - type: ExplosionResistance
