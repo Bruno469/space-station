@@ -22,4 +22,4 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetPlasmanBasic
-    SlotFlags: innerclothing
+    requiredSlot: innerclothing
