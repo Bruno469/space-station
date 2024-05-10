@@ -199,21 +199,14 @@
   - type: StationLimitedNetwork
   - type: TemperatureProtection
     coefficient: 0.001
-  - type: HeldSpeedModifier
   - type: ToggleableClothing
     slot: head
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
   - type: GroupExamine
-  - type: Sprite
-    state: icon
   - type: Item
     size: Normal
-  - type: Clothing
-    slots: [innerclothing]
-    equipSound:
-      path: /Audio/Items/jumpsuit_equip.ogg
   - type: Butcherable
     butcheringType: Knife
     spawned:
@@ -223,4 +216,3 @@
     tags:
     - ClothMade
     - Hardsuit
-    - WhitelistChameleon

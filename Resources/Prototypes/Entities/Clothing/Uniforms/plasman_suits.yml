@@ -9,6 +9,9 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Uniforms/plasman/others.rsi
+    slots: [innerclothing]
+    equipSound:
+      path: /Audio/Items/jumpsuit_equip.ogg
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: Armor

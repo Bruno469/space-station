@@ -23,13 +23,6 @@
           maxVol: 50.0
         food:
           maxVol: 5
-          reagents:
-          - ReagentId: Plasma
-            Quantity: 5
-        organ:
-          reagents:
-          - ReagentId: Plasma
-            Quantity: 10
 
       
 - type: entity
@@ -55,15 +48,8 @@
       rateModifier: 100.0
   - type: SolutionContainerManager
     solutions:
-      organ:
-        reagents:
-        - ReagentId: Plasma
-          Quantity: 10
       Lung:
         maxVol: 100.0
         canReact: false
       food:
         maxVol: 5
-        reagents:
-        - ReagentId: Plasma
-          Quantity: 5
