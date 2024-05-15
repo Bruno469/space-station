@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingPlasmansuitBase
   id: ClothingJumpsuitPlasmaman
-  name: basic plasmaman uniform
-  description: Basic plasmaman suit made for plasmaman
+  name: Advanced PlasmaMan Suit
+  description: Advanced PlasmaMan suit made for plasmaman
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/plasman/others.rsi
@@ -25,4 +25,63 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetPlasmanBasic
+    requiredSlot: innerclothing
+
+# COMMAND
+
+- type: entity
+  parent: ClothingPlasmansuitBase
+  id: ClothingJumpsuitPlasmaman
+  name: Captain PlasmaMan Suit
+  description: Advanced PlasmaMan suit made for plasmaman
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/plasman/command/cap.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Uniforms/plasman/command/cap.rsi
+    slots: [innerclothing]
+    equipSound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetPlasmanCaptain
+    requiredSlot: innerclothing
+
+- type: entity
+  parent: ClothingPlasmansuitBase
+  id: ClothingJumpsuitPlasmaman
+  name: Head Of Security PlasmaMan Suit
+  description: Head Of Security suit made for plasmaman
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/plasman/command/hos.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Uniforms/plasman/command/hos.rsi
+    slots: [innerclothing]
+    equipSound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetPlasmanHos
+    requiredSlot: innerclothing
+
+- type: entity
+  parent: ClothingPlasmansuitBase
+  id: ClothingJumpsuitPlasmaman
+  name: Quartermaster PlasmaMan Suit
+  description: Quartermaster suit made for plasmaman
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/plasman/command/qm.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Uniforms/plasman/command/qm.rsi
+    slots: [innerclothing]
+    equipSound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetPlasmanQm
     requiredSlot: innerclothing

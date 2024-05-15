@@ -2,12 +2,12 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetPlasmanBasic
-  name: basic PlasmanBasic helmet
+  name: Advanced PlasmaMan Helmet
   description: A basic-looking PlasmanBasic helmet that provides minor protection against oxygen atmos.
   components:
   - type: BreathMask
   - type: Sprite
-    sprite: Clothing/Head/Helmets/plasman.rsi
+    sprite: Clothing/Head/Helmets/plasman_helmets/others.rsi
     layers:
     - state: baseIcon
     - state: baseligIcon
@@ -29,6 +29,53 @@
       - state: basevesting
   - type: PointLight
     color: "#adffe6"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 100
+
+# COMMAND
+
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmetPlasmanCaptain
+  name: Captain PlasmaMan Helmet
+  description: A basic-looking PlasmanBasic helmet that provides minor protection against oxygen atmos.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/plasman_helmets/command/cap.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/plasman_helmets/command/cap.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 100
+
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmetPlasmanHos
+  name: Captain PlasmaMan Helmet
+  description: A basic-looking PlasmanBasic helmet that provides minor protection against oxygen atmos.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/plasman_helmets/command/hos.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/plasman_helmets/command/hos.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 100
+
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmetPlasmanQm
+  name: Captain PlasmaMan Helmet
+  description: A basic-looking PlasmanBasic helmet that provides minor protection against oxygen atmos.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/plasman_helmets/command/qm.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/plasman_helmets/command/qm.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 100
